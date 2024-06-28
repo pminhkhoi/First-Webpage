@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="recommend.js"></script>
+    </head>
+    <body>
+        
+        <div id="home">
+            <nav class="topdiv">
+                <a href="#aboutme"><button class="topmenu">About me</button></a>
+                <a href="#skill"><button class="topmenu">Skills</button></a>
+                <a href="#project"><button class="topmenu">Projects</button></a>
+                <a href="#recommendation"><button class="topmenu">Recommendations</button></a>
+            </nav>
+            <h1>Pham Minh Khoi</h1>
+            <p><img src="email_img.png" alt="email_icon"> pxxxxxxxxxxxx @gmail.com</p>
+            <p><img src="phone_img.png" alt="phone_icon"> +65xxxxxxxx</p>
+        </div>
+
+        <div id="aboutme">
+            <figure>
+                <img src="icon.jpg" alt="portfolio_icon">
+            </figure>
+            <h1>Hi, I'm Khoi</h1>
+            <p>I am a fresh graduate in artificial intelligence major. I have experience in developing machine learning and deep learning models. I am learning to build software application to support my specialization. I'm also looking for a opportunity to work as a research scientist in a big tech company to approach the SOTA technologies.</p>
+        </div>
+        <div id="skill">
+            <header>Skills</header>
+            <div class="badges">
+                <div class="b python">
+                    <img src="python_icon.png">
+                    <p>Python</p>
+                    <p>2 years experience</p>
+                </div>
+                <div class="b pytorch">
+                    <img src="pytorch_icon.png">
+                    <p>PyTorch</p>
+                    <p>2 years experience</p>
+                </div>
+                <div class="b html">
+                    <img src="html_icon.png">
+                    <p>HTML</p>
+                    <p>2 months experience</p>
+                </div>
+                <div class="b css">
+                    <img src="css_icon.svg">
+                    <p>CSS</p>
+                    <p>2 months experience</p>
+                </div>
+                <div class="b js">
+                    <img src="js_icon.png">
+                    <p>JavaScript</p>
+                    <p>2 months experience</p>
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <header>Projects</header>
+            <div class="proj">
+                <div>
+                    <h1>Image Super-Resolution</h1>
+                    <ul>
+                        <li>Constructed image super-resolution model based on RealESRGAN to restore the resolution of low quality and noisy images.</li>
+                    </ul>
+                </div>
+                <hr/>
+                <div>
+                    <h1>Traffic Signs Detection</h1>
+                    <ul>
+                        <li>Developed a traffic sign detection model based on YOLOv5 and Faster RCNN to detect and classified Vietnamese traffic signs from the driver view.</it>
+                    </ul>
+                </div>
+                <hr/>
+                <div>
+                    <h1>Fashion Data Multi-label Classification</h1>
+                    <ul>
+                        <li>Combined Visual Attention Network with Asymetric loss to construct a multi-label classification model with a total of 23 classes divided into 6 categories.</it>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="recommendation">
+            <header>Recommendations</header>
+            <div class="recommendation" id="post">
+                <p>
+                    <i><span>"</span> Khoi is a research enthusiast who willing to learn more and more. He got interesting ideas and a great attitude in achieving the goals. <span>"</span></i>
+                </p>
+                <p>
+                    <i><span>"</span> Working with Khoi is delightful, he always listen and take all opinions into consideration to give the best outcome that satisfy everybody. <span>"</span></i>
+                </p>
+                <p>
+                    <i><span>"</span> He is a hard-working and excellent colleague. He accomplished every tasks excellently without any adjustment. <span>"</span></i>
+                </p>
+            </div>
+        </div>
+        <div class="message">
+            <h1>Leave a Recommendation</h1>
+            <input type="text" id="name" placeholder="Name (optional)"><br/>
+            <input type="text" id="message" placeholder="Message"><br/>
+            <button id="submit" onclick="recommendation()">Submit</button>
+        </div>
+        <div class="home_icon">
+            <a href="#home">
+                <img src="home_icon.png" alt="home_icon">
+            </a>
+        </div>
+    </body>
+</html>
